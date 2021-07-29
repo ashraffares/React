@@ -14,6 +14,16 @@ export default class Counter extends React.Component {
         this.reset = () => this.setState({counter: 0});
     }
 
+    shouldComponentUpdate(nextProps, nexState) {
+        if (nextProps.ignoreProp &&
+            this.props.ignoreProp !== nextProps.ignoreProp) {
+                console.log('Start shouldComponentUpdate - DO NOT RENDER.');
+                return false
+            }
+            console.log('Start shouldComponentUpdate - RENDER.');
+            return true
+    }
+
     // the render method is trigerd each time change happen to the component.
     render() {
         console.log('Start Render');
