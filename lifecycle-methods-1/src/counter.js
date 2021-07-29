@@ -40,4 +40,10 @@ export default class Counter extends React.Component {
         console.log('start ComponentDidUpdate ');
         console.log('_________________________');
     }
+
+    // this lifeCycle method start when the component will be taking out of the DOM.
+    componentWillUnmount() {
+        console.log('start componentWillUnmount');
+        console.log('__________________________');
+    }
 }
