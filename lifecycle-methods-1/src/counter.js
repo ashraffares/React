@@ -13,6 +13,8 @@ export default class Counter extends React.Component {
         this.decrement = () => this.setState({counter: this.state.counter - 1});
         this.reset = () => this.setState({counter: 0});
     }
+
+    // the render method is trigerd each time change happen to the component.
     render() {
         console.log('Start Render');
         return (
@@ -26,5 +28,16 @@ export default class Counter extends React.Component {
                 </div>
            </div>
         )
+    }
+    // this lifeCycle method start after kick of after render method and it called once when the component first created.
+    componentDidMount() {
+        console.log('Start ComponentDidMount');
+        console.log('________________________');
+    }
+
+    // this lifeCycle method start each time there is update in the component
+    componentDidUpdate(prevProps, prevState, snapShot) {
+        console.log('start ComponentDidUpdate ');
+        console.log('_________________________');
     }
 }
