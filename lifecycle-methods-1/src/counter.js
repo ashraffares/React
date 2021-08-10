@@ -14,6 +14,10 @@ export default class Counter extends React.Component {
         this.reset = () => this.setState({counter: 0});
     }
 
+    static getDerivedStateFromProps(props, state) {
+        
+    }
+
     shouldComponentUpdate(nextProps, nexState) {
         if (nextProps.ignoreProp &&
             this.props.ignoreProp !== nextProps.ignoreProp) {
