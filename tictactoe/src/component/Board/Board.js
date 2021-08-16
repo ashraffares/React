@@ -4,7 +4,7 @@ import styles from "./Board.module.css";
 
 class Board extends React.Component {
   renderSquare(i) {
-    return <Square />;
+    return <Square value={i}/>;
   }
 
   render() {
