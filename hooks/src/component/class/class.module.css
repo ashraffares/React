@@ -1,0 +1,33 @@
+.section {
+    width: fit-content;
+    background-color: #FFE7C7;
+    padding: 15px;
+    margin: 100px auto;
+}
+
+.row {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    margin: 13px;
+    color: #aaa;
+    
+}
+
+.nameInput {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: none;
+    font-family: serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nameInput:focus {
+    outline: none;
+    background-color: #555;
+    color: #fff;
+}
